@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lNL-Q5-v0y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Programatically-->
+        <scene sceneID="AhG-bO-EHY">
+            <objects>
+                <viewController id="Dp9-mR-K7G" customClass="EYImageSliderProgramatic" customModule="EYImageSliderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kas-OF-cdZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vf4-Ka-Yw1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lTE-UT-Saa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Programatically" id="Jx0-a9-Dfu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0o7-aq-6hI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="553"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WMB-v7-omM">
+            <objects>
+                <tabBarController id="lNL-Q5-v0y" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gF1-Sg-2hI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YFI-kT-RD5"/>
+                        <segue destination="Dp9-mR-K7G" kind="relationship" relationship="viewControllers" id="F0d-0g-qkt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3od-bY-NE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-912" y="223"/>
+        </scene>
+        <!--Storyboard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EYImageSliderStoryboard" id="BYZ-38-t0r" customClass="EYImageSliderStoryboard" customModule="EYImageSliderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-Eq-Pbc" customClass="EYImageSlider" customModule="EYImageSlider">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gTp-Eq-Pbc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2LH-Ag-nH6"/>
+                            <constraint firstItem="gTp-Eq-Pbc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W9E-gp-tn5"/>
+                            <constraint firstAttribute="trailing" secondItem="gTp-Eq-Pbc" secondAttribute="trailing" id="fQ5-BB-1vf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gTp-Eq-Pbc" secondAttribute="bottom" id="tee-Gb-YnO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Storyboard" id="2Wx-Pm-Tw7"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="imageSlider" destination="gTp-Eq-Pbc" id="j81-EV-Aff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="-141"/>
+        </scene>
+    </scenes>
+</document>
