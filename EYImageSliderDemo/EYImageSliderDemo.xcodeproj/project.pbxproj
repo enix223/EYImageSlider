@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0E44BE161DC47F7C00C810B4 /* EYImageSliderBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYImageSliderBase.swift; sourceTree = "<group>"; };
+		0E44BE4A1DC4925600C810B4 /* image-slider.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "image-slider.gif"; path = "DemoGif/image-slider.gif"; sourceTree = "<group>"; };
 		0ECB98981DC47A0D00F76D8D /* EYImageSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EYImageSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECB989B1DC47A0D00F76D8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECB989D1DC47A0D00F76D8D /* EYImageSliderStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EYImageSliderStoryboard.swift; sourceTree = "<group>"; };
@@ -42,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E44BE491DC4922300C810B4 /* DemoGIF */ = {
+			isa = PBXGroup;
+			children = (
+				0E44BE4A1DC4925600C810B4 /* image-slider.gif */,
+			);
+			name = DemoGIF;
+			sourceTree = "<group>";
+		};
 		0ECB988F1DC47A0D00F76D8D = {
 			isa = PBXGroup;
 			children = (
+				0E44BE491DC4922300C810B4 /* DemoGIF */,
 				0ECB98B11DC47C0A00F76D8D /* EYImageSlider.framework */,
 				0ECB989A1DC47A0D00F76D8D /* EYImageSliderDemo */,
 				0ECB98991DC47A0D00F76D8D /* Products */,
