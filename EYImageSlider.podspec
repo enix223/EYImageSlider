@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.ios.deployment_target = '8.0'
   s.name         = "EYImageSlider"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "EYImageSlider is an widget for you to show a series images like in a slider."
   s.description  = "EYImageSlider is a fully customizable widget created for iOS platform to show images in a slider way, it is also support lazy image loading. Developer could also specify the image loading behaviour, eg, using SDWebImage to pull image from remote server."
 
