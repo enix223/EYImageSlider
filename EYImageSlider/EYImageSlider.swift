@@ -50,9 +50,9 @@
  public class EYImageSlider: UIView, UIScrollViewDelegate {
     
     /// Delegates
-    public var dataSource: EYImageSliderDataSource!
-    public var delegate: EYImageSliderDelegate?
-    public var imageSource: EYImageSliderImageDataSource?
+    public weak var dataSource: EYImageSliderDataSource!
+    public weak var delegate: EYImageSliderDelegate?
+    public weak var imageSource: EYImageSliderImageDataSource?
     
     /// Property
     public var scrollView: UIScrollView!
