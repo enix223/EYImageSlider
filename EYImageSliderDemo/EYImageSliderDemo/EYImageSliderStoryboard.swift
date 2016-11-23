@@ -24,7 +24,7 @@ class EYImageSliderStoryboard: EYImageSliderBase {
         imageSlider.slideShowTimeInterval = 3
         
         // Set image caption
-        imageSlider.captionTextColor = UIColor.whiteColor()
+        imageSlider.captionTextColor = UIColor.white
     }
 }
 

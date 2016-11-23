@@ -23,7 +23,7 @@ class EYImageSliderProgramatic: EYImageSliderBase {
         imageSlider.dataSource = self
         imageSlider.delegate = self
         
-        imageSlider.captionTextColor = UIColor.whiteColor()
+        imageSlider.captionTextColor = UIColor.white
         
         view.addSubview(imageSlider)
     }
