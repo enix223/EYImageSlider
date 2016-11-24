@@ -35,7 +35,7 @@
         imageView.addSubview(actInd)
         actInd.startAnimating()
         
-        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background).async { () -> Void in
+        DispatchQueue.global(qos: .background).async { () -> Void in
             if let imageData = try? Data(contentsOf: url) {
                 DispatchQueue.main.async(execute: { () -> Void in
                     let img = UIImage(data: imageData)
